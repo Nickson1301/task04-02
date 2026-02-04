@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import RojarComp from './components/RojarComp';
+import NicksonComp from './components/NicksonComp';
+import CounterComp from './components/CounterComp';
+import ToggleImage from './components/ToggleImage';
+ import ChangeImage from './components/ChangeImage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RojarComp fname="Rojar" lname="Nickson" email="rojar@gmail.com" contact={9087685650} city="Chennai"/><hr></hr>
+      <NicksonComp fname="Rojar" lname="Nickson" email="rojar@gmail.com" contact={9087685650} city="Chennai"/><hr/>
+      <CounterComp/><hr></hr>
+
+      <ToggleImage/><hr></hr>
+      <ChangeImage/>
+
+
     </div>
   );
 }
